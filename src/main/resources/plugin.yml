@@ -2,3 +2,13 @@ name: Bedwars
 version: '1.0-SNAPSHOT'
 main: com.jostb.bedwars.Bedwars
 api-version: '1.21'
+commands:
+  start:
+    description: Starts a game of 1v1v... Bedwars
+    usage: /start
+  end:
+    description: End the current game
+    usage: /end
+  mtp:
+    description: Teleports an OP player to the spawn of a specified world
+    usage: /mtp <worldname>
