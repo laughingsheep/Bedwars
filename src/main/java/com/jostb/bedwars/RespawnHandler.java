@@ -88,6 +88,7 @@ public class RespawnHandler implements Listener {
               team.eliminated = true;
           }
           GameManager.checkForWin();
+          ScoreboardHandler.update();
           return;
       }
       Title title = Title.title(

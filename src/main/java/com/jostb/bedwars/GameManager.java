@@ -138,6 +138,7 @@ public class GameManager {
         WorldManager.createMap();
         isLoadingMap = false;
         TeamInfo.resetTeams();
+        ScoreboardHandler.hide();
         Bukkit.getScheduler().runTaskLater(plugin, () -> {
             for (Player player : Bukkit.getOnlinePlayers()) {
                 resetPlayer(player);
@@ -173,6 +174,8 @@ public class GameManager {
             resetPlayer(player);
             personalise(player);
         }
+        ScoreboardHandler.createSidebar();
+        ScoreboardHandler.show();
         //Place beds
         for (TeamInfo team : TeamInfo.teams) {
             placeBed(team);

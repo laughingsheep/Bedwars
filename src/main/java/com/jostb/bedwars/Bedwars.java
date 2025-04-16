@@ -12,6 +12,7 @@ public final class Bedwars extends JavaPlugin {
         new SpecialItemHandler(this);
         new EffectManager(this);
         new GameManager(new ItemSpawner(this), this);
+        new ScoreboardHandler(this);
         getCommand("start").setExecutor(new commandManager());
         getCommand("end").setExecutor(new commandManager());
         getCommand("mtp").setExecutor(new commandManager());

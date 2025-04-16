@@ -80,6 +80,7 @@ public class BlockProtection implements Listener {
                 for (Player p : team.players) {
                     p.showTitle(title);
                 }
+                ScoreboardHandler.update();
             }
         }
     }
